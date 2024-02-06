@@ -13,4 +13,4 @@ ENV LANG=en_US.UTF-8 DEBIAN_FRONTEND=noninteractive LANGUAGE=en_US.UTF-8 LC_ALL=
 RUN cp ninja /bin/ninja
 RUN mkdir /.ninja && chmod 777 /.ninja
 
-CMD ["/bin/ninja","run"]
+CMD ["/bin/ninja", "run", "--enable-webui", "--arkose-endpoint", "https://niansuh-ninja.hf.space"]
